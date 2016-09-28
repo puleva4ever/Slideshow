@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slideshow</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/libs/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		
+		
+		<div class="slideshow">
+			<div class="slide-wrap">
+				<div class="slide"></div>
+			</div>	
+			
+			<div class="placeholder"></div>	
+			
+			<div class="controls">
+				
+				<div class="speed-wrap">
+					<div>
+						<div class="sel-title">Speed:</div>
+						<select id="sel-speed">
+							<option value="0">Slow</option>
+							<option value="1" selected>Normal</option>
+							<option value="2">Fast</option>
+						</select>
+					</div>
+				</div>	
+				
+				<div id="btn-play" class="play pause"></div>
+				
+				<div class="fade-wrap">
+					<div>
+						<div class="sel-title">Fade:</div>
+						<select id="sel-fade">
+							<option value="0">Slow</option>
+							<option value="1" selected>Normal</option>
+							<option value="2">Fast</option>
+						</select>
+					</div>
+				</div>
+				
+			</div>		
+		</div>		
+	</body>
+</html>
