@@ -23,10 +23,13 @@ $(document).ready(function () {
 	$.ajax({
 		url: "img",
 		success: function (data) {
+			$(".slideshow").hide();
 			$(data).find("a:contains(.jpg)").each(function () {				
 				images.push($(this).attr("href"));
-				slide.css("background-image", "url('img/"+images[0]+"')");
-			});
+				$("body").append("<span><img src='img/"+$(this).attr("href")+"' /></span>");
+			});			
+			slide.css("background-image", "url('img/"+images[0]+"')");
+			$(".slideshow").show();
 		}
 	});	
 	
